@@ -58,10 +58,8 @@ const Sidebar = () => {
         {/* Routes here */}
         <div className="flex flex-col mt-8 w-full justify-center items-center gap-6">
           <div className="flex gap-3 items-center mr-3 p-1 transition-all duration-300 ease-in-out hover:brightness-90 text-white hover:text-yellow-400 ">
-            <IoMdHome /><Link to={'/'} spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}  >Home</Link>
+            <IoMdHome /><Link to={'/'}
+              >Home</Link>
           </div>
           <div className="flex gap-3 items-center p-1 mr-3 transition-all duration-300 ease-in-out hover:brightness-90  text-white hover:text-yellow-400 ">
             <FaRegCircleUser />

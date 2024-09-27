@@ -17,8 +17,6 @@ const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   
   
-  
-  
   return (
     <>
       <div className="w-full h-screen xl:hidden lg:hidden">
@@ -55,6 +53,7 @@ const Navbar = () => {
 
           </section>
         </div>}
+        
       </div>
     </>
   )

@@ -4,41 +4,41 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './Components/About'
 import Portfolio from './Components/Portfolio'
 import Contact from './Components/Contact'
-import AppLayout from './Components/AppLayout'
+import Sidebar from './Components/Sidebar'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   const router = createBrowserRouter([
+   
+
     {
       path: "/",
-      element: <AppLayout />,
-      children: [
-        {
-          path: "/",
-          element: <Home />
-        },
-        {
-          path: "/about",
-          element: <About />
-        },
-        {
-          path: "portfolio",
-          element: <Portfolio />
-        },
-        {
-          path: "/contact",
-          element: <Contact />
-        }
-      ]
-
+      element:  <div className=" lg:flex xl:flex "> <Navbar/> <Sidebar/> <Home/></div>
     },
+
+    {
+      path: "/about",
+      element:<div className="lg:flex xl:flex ">  <Navbar/> <Sidebar/> <About /> </div>
+    },
+    {
+      path: "portfolio",
+      element: <div className="lg:flex xl:flex ">  <Navbar/> <Sidebar/> <Portfolio /></div>
+    },
+    {
+      path: "/contact",
+      element: <div className="lg:flex xl:flex ">  <Navbar/>  <Sidebar/> <Contact />  </div> 
+    }
+      
+
+    
   ])
-  return (
+return (
 
-    <div>
+  <div>
 
-      <RouterProvider router={router} />
-    </div>
-  )
+    <RouterProvider router={router} />
+  </div>
+)
 }
 
 export default App

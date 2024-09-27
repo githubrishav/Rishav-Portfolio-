@@ -4,9 +4,9 @@ import profile from './../assets/profile.jpg'
 
 const About = () => {
   return (
-    <div className=' w-full  h-screen flex '>
+    <div className=' lg:w-full xl:w-full xl:h-screen hidden xl:block lg:block lg:h-screen flex  '>
       {/* Top-About */}
-      <div className="flex flex-col p-8 w-full h-screen ">
+      <div className="flex flex-col p-8 w-full h-screen bg-black/50 ">
         <p className='text-4xl font-bold text-yellow-400'>ABOUT</p>
         <p className='text-base text-white'> Hi, I'm<strong className='text-yellow-400'>  Rishav Kumar </strong> — a passionate web developer, designer, video editor, and photographer. With a keen eye for aesthetics and a love for creating digital experiences I specialize in crafting responsive, user-friendly websites, designing visually compelling interfaces, and editing videos that tell powerful stories.
         </p>

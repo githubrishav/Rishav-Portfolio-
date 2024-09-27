@@ -27,7 +27,7 @@ const Sidebar = () => {
   return (
     <>
       
-      <div className="lg:flex xl:flex lg:flex-col xl:flex-col lg:h-screen xl:h-screen lg:w-[22rem] xl:w-[22rem]  items-center hidden lg:block xl:block md:bg-zinc-400 lg:bg-green-500 xl:bg-yellow-400">
+      <div className=" lg:flex xl:flex lg:flex-col xl:flex-col lg:h-screen xl:h-screen lg:w-[22rem] xl:w-[22rem]  items-center hidden  md:bg-zinc-400">
         <div className=" flex flex-col gap-2  w-full p-3 ">
           {/* image part here */}
           <div className=" flex justify-center p-4">

@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { FaMailBulk } from "react-icons/fa";
 import { IoMdHome } from "react-icons/io";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import { FcDocument } from "react-icons/fc";
+
 
 
 
@@ -19,14 +21,16 @@ const Navbar = () => {
   
   return (
     <>
-      <div className="w-full h-screen xl:hidden lg:hidden">
+      <div className="xl:hidden lg:hidden">
 
-
-        <div className="w-screen flex bg-black h-[4rem] lg:hidden xl:hidden justify-between items-center p-8">
-          <img src="" alt="logo" />
-          <button onClick={()=>{setShowNav(!showNav)}}  className='text-white h-[3rem] w-[3rem] flex justify-center items-center bg-orange-500'><FaBars />
+        <div className="w-screen flex  h-[4rem] lg:hidden xl:hidden justify-between items-center p-8 shadow-lg">
+          
+          <p className='text-black text-2xl font-semibold '>PORTFOLIO</p>
+          <button onClick={()=>{setShowNav(!showNav)}}  className='text-white h-[3rem] w-[3rem] flex justify-center items-center bg-yellow-400'><FaBars />
           </button>
+         
         </div>
+      
 
 
         {showNav &&   <div className="w-screen h-full bg-black/50 top-0 left-0 backdrop-blur-sm lg:hidden fixed  ">

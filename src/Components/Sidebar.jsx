@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -12,20 +12,23 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaMailBulk } from "react-icons/fa";
 import profile from './../assets/profile.jpg'
 
-
-
-
-
-
-
+import Home from './Home';
+import About from './About';
 
 
 
 const Sidebar = () => {
+
+  const [open, setOpen] = useState(true);
+
+
+
+
   return (
     <>
-      <div className="flex flex-col h-screen w-[22rem]  items-center">
-        <div className=" flex flex-col gap-2  w-full p-3">
+      
+      <div className="lg:flex xl:flex lg:flex-col xl:flex-col lg:h-screen xl:h-screen lg:w-[22rem] xl:w-[22rem]  items-center hidden lg:block xl:block md:bg-zinc-400 lg:bg-green-500 xl:bg-yellow-400">
+        <div className=" flex flex-col gap-2  w-full p-3 ">
           {/* image part here */}
           <div className=" flex justify-center p-4">
             <div className="w-40 h-40 rounded-full items-center flex justify-center transition-all duration-300 ease-in-out hover:brightness-90  hover:bg-yellow-300">
@@ -59,7 +62,7 @@ const Sidebar = () => {
         <div className="flex flex-col mt-8 w-full justify-center items-center gap-6">
           <div className="flex gap-3 items-center mr-3 p-1 transition-all duration-300 ease-in-out hover:brightness-90 text-white hover:text-yellow-400 ">
             <IoMdHome /><Link to={'/'}
-              >Home</Link>
+            >Home</Link>
           </div>
           <div className="flex gap-3 items-center p-1 mr-3 transition-all duration-300 ease-in-out hover:brightness-90  text-white hover:text-yellow-400 ">
             <FaRegCircleUser />

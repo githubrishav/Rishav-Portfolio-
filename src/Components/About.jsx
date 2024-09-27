@@ -4,7 +4,7 @@ import profile from './../assets/profile.jpg'
 
 const About = () => {
   return (
-    <div className=' w-full  h-screen flex   '>
+    <div className=' w-full  h-screen flex '>
       {/* Top-About */}
       <div className="flex flex-col p-8 w-full h-screen ">
         <p className='text-4xl font-bold text-yellow-400'>ABOUT</p>

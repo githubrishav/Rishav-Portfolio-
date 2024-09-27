@@ -14,13 +14,13 @@ const Contact = () => {
     formState: { errors, isSubmitting },
   } = useForm();
 
-const delay = (d)=>{
- return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve()
-    }, d * 1000);
-  })
-}
+  const delay = (d) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve()
+      }, d * 1000);
+    })
+  }
 
   const OnSubmit = async (data) => {
     await delay(3)
@@ -28,21 +28,21 @@ const delay = (d)=>{
   }
 
   return (
-   
 
-    <div className=' h-screen w-full flex flex-col '>
-      
+
+    <div className=' h-screen w-full flex flex-col  '>
+
       <div className="text-4xl font-bold text-white   ">
         <p className='text-yellow-400 p-8 '>CONTACT</p>
       </div>
       {/* Left side info */}
-      <div className="flex w-full justify-evenly border-1px solid">
-        <div className=" flex flex-col gap-10 justify-center font-bold p-8 text-white ">
+      <div className="flex w-full justify-evenly  border-1px solid">
+        <div className=" flex flex-col gap-10 justify-center font-bold p-8 text-black ">
           <div className="flex items-center  gap-10">
             <div className=" ">
               <FaLocationDot />
             </div>
-            <div className="c">
+            <div className="">
               <p>ADDRESS</p>
               <p>Enter ADD</p>
             </div>
@@ -77,9 +77,9 @@ const delay = (d)=>{
           </div> */}
         </div>
         {/* form here */}
-        
+
         <form action="" onSubmit={handleSubmit(OnSubmit)} >
-          
+
           <div className="flex justify-between mb-2">
             <div className="">
               <p className='mb-4 text-white'>Your name</p>
@@ -105,7 +105,7 @@ const delay = (d)=>{
             {errors.yourmsg && <div className='font-semibold text-red-700 ml-1'>{errors.yourmsg.message}</div>}
 
             <div className='text-white mt-8 w-full flex items-center justify-center'>
-            {isSubmitting && <div className='flex gap-4 items-center'> Submitting <HiUpload />
+              {isSubmitting && <div className='flex gap-4 items-center'> Submitting <HiUpload />
               </div>}
               <button type="submit" disabled={isSubmitting} className=' hover:bg-slate-500 bg-yellow-400 px-10 py-2 rounded-full'> Send</button>
             </div>

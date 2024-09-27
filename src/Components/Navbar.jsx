@@ -23,7 +23,7 @@ const Navbar = () => {
     <>
       <div className="xl:hidden lg:hidden">
 
-        <div className="w-screen flex  h-[4rem] lg:hidden xl:hidden justify-between items-center p-8 shadow-lg">
+        <div className="w-full flex h-[4rem] lg:hidden xl:hidden justify-between items-center p-8 shadow-lg">
           
           <p className='text-black text-2xl font-semibold '>PORTFOLIO</p>
           <button onClick={()=>{setShowNav(!showNav)}}  className='text-white h-[3rem] w-[3rem] flex justify-center items-center bg-yellow-400'><FaBars />
@@ -33,7 +33,7 @@ const Navbar = () => {
       
 
 
-        {showNav &&   <div className="w-screen h-full bg-black/50 top-0 left-0 backdrop-blur-sm lg:hidden fixed  ">
+        {showNav &&   <div className="w-full h-full bg-black/50 top-0 left-0 backdrop-blur-sm lg:hidden fixed  ">
 
           <section className='text-black bg-white flex flex-col absolute top-0 right-0 h-screen w-[12rem] p-8 z-50 gap-8'>
 

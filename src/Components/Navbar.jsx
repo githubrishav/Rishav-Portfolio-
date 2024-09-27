@@ -14,7 +14,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 const Navbar = () => {
 
 
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   
   
   

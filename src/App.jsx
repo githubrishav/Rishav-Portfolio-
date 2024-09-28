@@ -36,7 +36,7 @@ const App = () => {
   ])
   return (
 
-    <div className='xl:w-full xl:h-screen xl:bg-hero  lg:bg-hero bg-cover bg-center'>
+    <div className='xl:w-full xl:h-screen bg-herotoo xl:bg-hero  lg:bg-hero bg-cover bg-center'>
 
       <RouterProvider router={router} />
     </div>

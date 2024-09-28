@@ -30,7 +30,7 @@ const Contact = () => {
   return (
 
 
-    <div className=' h-screen w-full flex flex-col  '>
+    <div className=' h-screen w-full flex flex-col lg:bg-black/60  xl:bg-black/60 xl:backdrop-blur-sm lg:backdrop-blur-sm  '>
 
       <div className="text-4xl font-bold text-white   ">
         <p className='text-yellow-400 p-8 '>CONTACT</p>

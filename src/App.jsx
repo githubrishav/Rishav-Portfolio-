@@ -8,37 +8,39 @@ import Sidebar from './Components/Sidebar'
 import Navbar from './Components/Navbar'
 
 const App = () => {
+
+  
   const router = createBrowserRouter([
-   
+
 
     {
       path: "/",
-      element:  <div className=" lg:flex xl:flex "> <Navbar/> <Sidebar/> <Home/></div>
+      element: <div className=" lg:flex xl:flex "> <Navbar /> <Sidebar /> <Home /></div>
     },
 
     {
       path: "/about",
-      element:<div className="lg:flex xl:flex ">  <Navbar/> <Sidebar/> <About /> </div>
+      element: <div className="lg:flex xl:flex ">  <Navbar /> <Sidebar /> <About /> </div>
     },
     {
       path: "portfolio",
-      element: <div className="lg:flex xl:flex ">  <Navbar/> <Sidebar/> <Portfolio /></div>
+      element: <div className="lg:flex xl:flex ">  <Navbar /> <Sidebar /> <Portfolio /></div>
     },
     {
       path: "/contact",
-      element: <div className="lg:flex xl:flex ">  <Navbar/>  <Sidebar/> <Contact />  </div> 
+      element: <div className="lg:flex xl:flex ">  <Navbar />  <Sidebar /> <Contact />  </div>
     }
-      
 
-    
+
+
   ])
-return (
+  return (
 
-  <div>
+    <div className='xl:w-full xl:h-screen xl:bg-hero  lg:bg-hero bg-cover bg-center'>
 
-    <RouterProvider router={router} />
-  </div>
-)
+      <RouterProvider router={router} />
+    </div>
+  )
 }
 
 export default App

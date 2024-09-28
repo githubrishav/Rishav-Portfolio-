@@ -27,7 +27,7 @@ const Sidebar = () => {
   return (
     <>
       
-      <div className=" lg:flex xl:flex lg:flex-col xl:flex-col lg:h-screen xl:h-screen lg:w-[22rem] xl:w-[22rem]  items-center hidden  md:bg-zinc-400">
+      <div className=" lg:flex bg-transparent bg-cover bg-center xl:flex lg:flex-col xl:flex-col lg:h-screen xl:h-screen lg:w-[22rem] xl:w-[22rem]  items-center hidden  ">
         <div className=" flex flex-col gap-2  w-full p-3 ">
           {/* image part here */}
           <div className=" flex justify-center p-4">
@@ -36,12 +36,12 @@ const Sidebar = () => {
             </div>
           </div>
           {/* name part here */}
-          <div className="text-center text-xl font-semibold font-mono text-yellow-400">
+          <div className="text-center text-xl font-semibold font-mono ">
             <p>Rishav </p>
           </div>
           {/* social media part here */}
           <div className="flex justify-center items-center p-2 gap-3 ">
-            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full hover:bg-yellow-400 transition-all duration-300 ease-in-out">
+            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-400 transition-all duration-300 ease-in-out">
               <FaFacebook />
             </div>
             <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full  hover:bg-yellow-400 transition-all duration-300 ease-in-out">
@@ -60,19 +60,19 @@ const Sidebar = () => {
         </div>
         {/* Routes here */}
         <div className="flex flex-col mt-8 w-full justify-center items-center gap-6">
-          <div className="flex gap-3 items-center mr-3 p-1 transition-all duration-300 ease-in-out hover:brightness-90 text-white hover:text-yellow-400 ">
+          <div className="flex gap-3 items-center mr-3 p-1 transition-all duration-300 ease-in-out hover:text-white">
             <IoMdHome /><Link to={'/'}
             >Home</Link>
           </div>
-          <div className="flex gap-3 items-center p-1 mr-3 transition-all duration-300 ease-in-out hover:brightness-90  text-white hover:text-yellow-400 ">
+          <div className="flex gap-3 items-center p-1 mr-3 transition-all duration-300 ease-in-out hover:text-white">
             <FaRegCircleUser />
             <Link to={'/about'}>About</Link>
           </div>
-          <div className="flex gap-3 items-center p-1 ml-1 transition-all duration-300 ease-in-out hover:brightness-90  text-white hover:text-yellow-400">
+          <div className="flex gap-3 items-center p-1 ml-1 transition-all duration-300 ease-in-out  hover:text-white">
             <IoDocumentTextOutline />
             <Link to={'/portfolio'}>Portfolio</Link>
           </div>
-          <div className="flex gap-3 items-center p-1 transition-all duration-300 ease-in-out hover:brightness-90 text-white hover:text-yellow-400">
+          <div className="flex gap-3 items-center p-1 transition-all duration-300 ease-in-out hover:text-white">
             <FaMailBulk />
             <Link to={'/contact'}>Contact</Link></div>
         </div>

@@ -42,10 +42,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className="hidden xl:block lg:block ">
+      <div className="hidden xl:block lg:block lg:bg-black/60  xl:bg-black/60 xl:backdrop-blur-sm lg:backdrop-blur-sm  ">
         <div className=' lg:w-full xl:w-full xl:h-screen  lg:h-screen flex  '>
           {/* Top-About */}
-          <div className="flex flex-col p-8 w-full h-screen bg-black/50 ">
+          <div className="flex flex-col p-8 w-full h-screen ">
             <p className='text-4xl font-bold text-yellow-400'>ABOUT</p>
             <p className='text-base text-white'> Hi, I'm<strong className='text-yellow-400'>  Rishav Kumar </strong> — a passionate web developer, designer, video editor, and photographer. With a keen eye for aesthetics and a love for creating digital experiences I specialize in crafting responsive, user-friendly websites, designing visually compelling interfaces, and editing videos that tell powerful stories.
             </p>

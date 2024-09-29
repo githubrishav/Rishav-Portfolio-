@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
-import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
-import pfp from "./../assets/pfp.png"
 import { Link } from 'react-router-dom';
 import { IoMdHome } from "react-icons/io";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaMailBulk } from "react-icons/fa";
 import profile from './../assets/profile.jpg'
+import { FaGithub } from "react-icons/fa";
+
 
 import Home from './Home';
 import About from './About';
@@ -31,7 +30,7 @@ const Sidebar = () => {
         <div className=" flex flex-col gap-2  w-full p-3 ">
           {/* image part here */}
           <div className=" flex justify-center p-4">
-            <div className="w-40 h-40 rounded-full items-center flex justify-center transition-all duration-300 ease-in-out hover:brightness-90  hover:bg-yellow-300">
+            <div className="w-40 h-40 rounded-full items-center flex justify-center transition-all duration-300 ease-in-out hover:brightness-90  hover:bg-[#4185ac]">
               <img src={profile} alt="img" className='w-36 h-36 rounded-full bg-center bg-cover ' />
             </div>
           </div>
@@ -41,21 +40,24 @@ const Sidebar = () => {
           </div>
           {/* social media part here */}
           <div className="flex justify-center items-center p-2 gap-3 ">
-            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-400 transition-all duration-300 ease-in-out">
-              <FaFacebook />
+            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#4185ac] transition-all duration-300 ease-in-out">
+              <a href="https://github.com/githubrishav"><FaGithub />
+              </a>
             </div>
-            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full  hover:bg-yellow-400 transition-all duration-300 ease-in-out">
-              <FaLinkedin />
+            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full  hover:bg-[#4185ac] transition-all duration-300 ease-in-out">
+             <a href="https://www.linkedin.com/in/rishav-kumar-3a656a293/"><FaLinkedin /></a> 
             </div>
-            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full  hover:bg-yellow-400 transition-all duration-300 ease-in-out">
-              <FaInstagram />
+            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full  hover:bg-[#4185ac] transition-all duration-300 ease-in-out">
+              <div className="c">
+                <a href="https://www.instagram.com/binlooping?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram /></a>
+               
+              </div>
+              
             </div>
-            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full  hover:bg-yellow-400 transition-all duration-300 ease-in-out">
-              <FaXTwitter />
+            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full  hover:bg-[#4185ac] transition-all duration-300 ease-in-out">
+             <a href="https://x.com/wrapyourcode?t=-SywXdQlt433KPwSMUy-rQ&s=09"></a> <FaXTwitter />
             </div>
-            <div className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full  hover:bg-yellow-400 transition-all duration-300 ease-in-out ">
-              <FaYoutube />
-            </div>
+           
           </div>
         </div>
         {/* Routes here */}

@@ -34,7 +34,7 @@ const About = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center p-[2rem] gap-[1rem] ">
-            <p className='text-lg font-bold text-[#4185ac] underline underline-offset-4 underline'>SKILLS</p>
+            <p className='text-lg font-bold text-[#4185ac]  underline-offset-4 underline'>SKILLS</p>
             <div className="flex gap-2">
               <p className='font-bold'>Languages & Development:</p>
               <div className='' >

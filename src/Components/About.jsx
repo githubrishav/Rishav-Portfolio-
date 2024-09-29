@@ -25,7 +25,7 @@ const About = () => {
               <div className=" text-balance  md:flex md:flex-col md:gap-3 text-base">
                 <p>Birthday : 28 Feb 2001</p>
                 <p>Website: N/A</p>
-                <p>Phone: +91-7011812707</p>
+                <p>Phone: +91-1234567890</p>
                 <p>City : Noida, Uttarpradesh, India</p>
                 <p>Age: 23</p>
                 <p>Degree: Bachelors</p>

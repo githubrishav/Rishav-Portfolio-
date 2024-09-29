@@ -25,7 +25,7 @@ const App = () => {
     {
       path: "portfolio",
       element: <div className="lg:flex xl:flex ">  <Navbar /> <Sidebar /> <Portfolio /></div>
-    },
+    }, 
     {
       path: "/contact",
       element: <div className="lg:flex xl:flex ">  <Navbar />  <Sidebar /> <Contact />  </div>
@@ -36,7 +36,7 @@ const App = () => {
   ])
   return (
 
-    <div className='xl:w-full xl:h-screen bg-herotoo xl:bg-hero  lg:bg-hero bg-cover bg-center'>
+    <div className=' font-poppins xl:w-full xl:h-screen  xl:bg-white lg:bg-white md: '>
 
       <RouterProvider router={router} />
     </div>

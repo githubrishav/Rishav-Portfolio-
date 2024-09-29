@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { FaMailBulk } from "react-icons/fa";
 import { IoMdHome } from "react-icons/io";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import { FcDocument } from "react-icons/fc";
+import vslogo from './../assets/vslogo.png'
 
 
 
@@ -23,10 +23,12 @@ const Navbar = () => {
     <>
       <div className="xl:hidden lg:hidden">
 
-        <div className="w-full flex h-[4rem] lg:hidden xl:hidden justify-between items-center p-8 ">
+        <div className="w-full bg-gradient-to-t from-white to-[#4185ac] flex h-[4rem] lg:hidden xl:hidden justify-between items-center p-4 ">
           
-          <p className='text-black text-2xl font-semibold '>PORTFOLIO</p>
-          <button onClick={()=>{setShowNav(!showNav)}}  className='text-white h-[3rem] w-[3rem] flex justify-center items-center bg-[#4185ac] rounded-full'><FaBars />
+          <p className='w-[2.5rem]   '>
+            <img src={vslogo} alt="" />
+          </p>
+          <button onClick={()=>{setShowNav(!showNav)}}  className='text-[#4185ac] h-[3rem] w-[3rem] flex justify-center items-center bg-white  rounded-full'><FaBars />
           </button>
          
         </div>

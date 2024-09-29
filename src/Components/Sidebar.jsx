@@ -27,7 +27,7 @@ const Sidebar = () => {
   return (
     <>
       
-      <div className=" lg:flex bg-transparent bg-cover bg-center xl:flex lg:flex-col xl:flex-col lg:h-screen xl:h-screen lg:w-[22rem] xl:w-[22rem]  items-center hidden  ">
+      <div className=" lg:flex  bg-gradient-to-l from-white to-[#4185ac]  brightness-125 xl:flex lg:flex-col xl:flex-col lg:h-screen xl:h-screen lg:w-[22rem] xl:w-[22rem]  items-center hidden shadow-inner ">
         <div className=" flex flex-col gap-2  w-full p-3 ">
           {/* image part here */}
           <div className=" flex justify-center p-4">

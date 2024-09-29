@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
 
-    <div className='w-full h-screen '>
+    <div className='w-full h-screen xl:bg-hero '>
       <div className="  h-screen flex-col xl:flex lg:flex lg:justify-center xl:justify-center xl:items-center lg:items-center items-center flex justify-center  ">
         <p className='lg:text-black bg xl:text-black    text-3xl lg:text-6xl xl:text-7xl font-semibold lg:font-semibold  xl:font-semibold '>Welcome to My <span className='text-[#4185ac]'>Portfolio!</span> </p>
         <p className='lg:text-black xl:mt-[2rem] lg:mt[2rem] mt-[1rem] xl:text-black  text-2xl lg:text-4xl xl:text-4xl font-semibold lg:font-semibold  xl:font-semibold text-center '>Web Developer | <span className=' text-[#4185ac]'>Designer </span> | Creator</p>

@@ -28,7 +28,7 @@ const Navbar = () => {
           <p className='w-[2.5rem]   '>
             <img src={vslogo} alt="" />
           </p>
-          <button onClick={()=>{setShowNav(!showNav)}}  className='text-[#4185ac] h-[3rem] w-[3rem] flex justify-center items-center bg-white  rounded-full'><FaBars />
+          <button onClick={()=>{setShowNav(!showNav)}}  className='text-white h-[3rem] w-[3rem] flex justify-center items-center rounded-full'><FaBars />
           </button>
          
         </div>

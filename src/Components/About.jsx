@@ -17,8 +17,8 @@ const About = () => {
           </div>
           {/* Bottom */}
           <div className=" flex justify-center items-center  ">
-            <div className="flex flex-col justify-center p-8 gap-4">
-              <p className='text-lg font-semibold text-[#4185ac] underline-offset-4 underline'>UI/UX Designer & Web Developer</p>
+            <div className="flex flex-col justify-center p-3 gap-4 ml-2 ">
+              <p className='text-base font-semibold text-[#4185ac] underline-offset-4 underline'>UI/UX Designer & Web Developer</p>
               <img src={profile} alt="img" className='w-[14rem] md:w-[16rem] md:h-[16rem] h-[14rem] border 1px bg-cover bg-center rounded-lg' />
             </div>
             <div className="mt-16 md:w-[16rem] md:h-[16rem]   md:mb-4 mr-4">
@@ -35,13 +35,13 @@ const About = () => {
           </div>
           <div className="flex flex-col justify-center p-[2rem] gap-[1rem] ">
             <p className='text-lg font-bold text-[#4185ac]  underline-offset-4 underline'>SKILLS</p>
-            <div className="flex gap-2">
+            <div className="flex text-pretty justify-between gap-8">
               <p className='font-bold'>Languages & Development:</p>
               <div className='' >
-                <p>Java, Python,JavaScript, Express.JS, Node.JS React.JS, MongoDB, HTML, CSS</p>
+                <p>Java, Python, JavaScript, Express.JS, Node.JS, React.JS, MongoDB, HTML, CSS</p>
               </div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex text-pretty justify-between gap-16">
               <p className='font-bold' >Developer Tools:</p>
               <div className='' >
                 <p>VsCode,GitHub,Figma, Android Studio, Eclipse, Canva</p>

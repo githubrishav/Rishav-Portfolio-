@@ -66,7 +66,7 @@ const About = () => {
                 <h4 className='font-bold text-xl  underline underline-offset-8 text-[#4185ac]'>
                   UI/UX Designer & Web Developer</h4>
                 <p className='text-black'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                I specialize in creating clean, modern, and intuitive designs, while developing responsive, user-centered web applications. With experience in both design and development, I bring ideas to life through creative solutions and seamless functionality. My skill set includes React, Tailwind CSS, HTML/CSS, JavaScript, and UI/UX design tools like Figma and Adobe XD.</p>
                 {/* More Info */}
                 <div className="flex text-black gap-36 mt-8">
                   <div className="flex flex-col gap-4 font-medium">

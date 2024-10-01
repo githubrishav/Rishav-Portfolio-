@@ -35,8 +35,8 @@ const Sidebar = () => {
             </div>
           </div>
           {/* name part here */}
-          <div className="text-center text-xl font-semibold font-mono ">
-            <p>Rishav </p>
+          <div className="text-center text-xl font-semibold ">
+            <p>Rishav Kumar</p>
           </div>
           {/* social media part here */}
           <div className="flex justify-center items-center p-2 gap-3 ">

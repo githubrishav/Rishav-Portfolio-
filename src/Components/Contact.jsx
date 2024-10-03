@@ -54,14 +54,14 @@ const Contact = () => {
             <FaLocationDot size={30} />
             <div>
               <p className="font-bold">ADDRESS</p>
-              <p>Enter ADD</p>
+              <p>Greater Noida West</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <IoIosCall size={30} />
             <div>
               <p className="font-bold">CALL</p>
-              <p>+91-1234567890</p>
+              <p>+91-7011812707</p>
             </div>
           </div>
           <div className="flex items-center gap-4">

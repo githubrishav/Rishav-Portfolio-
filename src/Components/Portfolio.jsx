@@ -6,7 +6,7 @@ const Portfolio = () => {
       <div className="cc">
         <p className='text-[#4185ac]  font-bold text-4xl'>PORTFOLIO</p>
       </div>
-      <div className="flex justify-evenly items-center mt-12 xl:mt-8 lg:mt-8 ">
+      {/* <div className="flex justify-evenly items-center mt-12 xl:mt-8 lg:mt-8 ">
         <div className="flex flex-col gap-10 1px solid">
           <div className="border 1px solid lg:w-[10rem] lg:h-[10rem] w-[8rem] h-[8rem] xl:w-[10rem] xl:h-[10rem]">
             d1
@@ -39,8 +39,8 @@ const Portfolio = () => {
           <div className="border 1px solid lg:w-[10rem] lg:h-[10rem] w-[8rem] h-[8rem] xl:w-[10rem] xl:h-[10rem]">
             d3
             </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
     </div>
   )

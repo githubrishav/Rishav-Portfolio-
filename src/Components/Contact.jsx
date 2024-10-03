@@ -4,6 +4,7 @@ import { IoIosCall } from "react-icons/io";
 import { FaMailBulk } from "react-icons/fa";
 import { useForm } from 'react-hook-form';
 import { HiUpload } from "react-icons/hi";
+import axios from 'axios';
 
 
 const Contact = () => {
@@ -22,10 +23,21 @@ const Contact = () => {
     })
   }
 
-  const OnSubmit = async (data) => {
-    await delay(3)
-    console.log(data)
-  }
+    const OnSubmit = async (data) => {
+      await delay(3);
+      console.log(data);
+
+      try {
+        const response = await axios.post('http://localhost:3000/contact', data);
+        console.log(response.data);
+        alert('Your message has been sent');
+      } catch (error) {
+        console.error('There was an error submitting the message ', error);
+        alert('There was an error while submitting the message');
+      }
+    };
+
+  
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center py-8 px-4">
@@ -33,10 +45,10 @@ const Contact = () => {
         <p className='text-[#4185ac] p-8'>CONTACT</p>
       </div>
 
-      {/* Contact Info and Form */}
+     
       <div className="flex flex-col lg:flex-row justify-between w-full lg:w-3/4 bg-gray-100 rounded-lg shadow-lg p-8">
 
-        {/* Left side info */}
+        
         <div className="flex flex-col gap-10 justify-center text-black w-full lg:w-1/2 mb-8 lg:mb-0">
           <div className="flex items-center gap-4">
             <FaLocationDot size={30} />
@@ -66,7 +78,7 @@ const Contact = () => {
           <div className="flex flex-col gap-6 mb-4">
             <div>
               <label className="mb-2 text-black">Your name</label>
-              <input type="text" required {...register('name', { minLength: { value: 3, message: "Min length is 3" }, maxLength: { value: 12, message: "Max length is 12" } })} autoComplete='off' placeholder='Enter your Name' className='w-full px-4 py-2 rounded-md text-black' />
+              <input type="text" required {...register('name', { minLength: { value: 3, message: "Min length is 3" }, maxLength: { value: 12, message: "Max length is 12" } })} placeholder='Enter your Name' className='w-full px-4 py-2 rounded-md text-black' />
               {errors.name && <div className='font-semibold text-red-700'>{errors.name.message}</div>}
             </div>
             <div>

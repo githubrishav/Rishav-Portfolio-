@@ -7,12 +7,9 @@ import { IoMdHome } from "react-icons/io";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaMailBulk } from "react-icons/fa";
-import profile from './../assets/profile.jpg'
+import bg from './../assets/bg.png'
 import { FaGithub } from "react-icons/fa";
 
-
-import Home from './Home';
-import About from './About';
 
 
 
@@ -31,7 +28,7 @@ const Sidebar = () => {
           {/* image part here */}
           <div className=" flex justify-center p-4">
             <div className="w-[9.5rem] h-[9.5rem] rounded-full items-center flex justify-center transition-all duration-300 ease-in-out hover:brightness-90 bg-white">
-              <img src={profile} alt="img" className='w-36 h-36 rounded-full bg-center bg-cover ' />
+              <img src={bg} alt="img" className='w-36 h-36 rounded-full bg-center bg-cover ' />
             </div>
           </div>
           {/* name part here */}

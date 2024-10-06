@@ -30,7 +30,7 @@ const Sidebar = () => {
         <div className=" flex flex-col gap-2  w-full p-3 ">
           {/* image part here */}
           <div className=" flex justify-center p-4">
-            <div className="w-40 h-40 rounded-full items-center flex justify-center transition-all duration-300 ease-in-out hover:brightness-90  hover:bg-[#4185ac]">
+            <div className="w-[9.5rem] h-[9.5rem] rounded-full items-center flex justify-center transition-all duration-300 ease-in-out hover:brightness-90 bg-white">
               <img src={profile} alt="img" className='w-36 h-36 rounded-full bg-center bg-cover ' />
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import ppf from "./../assets/ppf.jpg"
+import avtar from "./../assets/avtar.jpg"
 import profile from './../assets/profile.jpg'
 
 const About = () => {
@@ -19,7 +19,7 @@ const About = () => {
           <div className=" flex justify-center items-center  ">
             <div className="flex flex-col justify-center p-3 gap-4 ml-2 ">
               <p className='text-base font-semibold text-[#4185ac] underline-offset-4 underline'>UI/UX Designer & Web Developer</p>
-              <img src={profile} alt="img" className='w-[14rem] md:w-[16rem] md:h-[16rem] h-[14rem] border 1px bg-cover bg-center rounded-lg' />
+              <img src={avtar} alt="img" className='w-[14rem] md:w-[16rem] md:h-[16rem] h-[14rem] border 1px bg-cover bg-center rounded-lg' />
             </div>
             <div className="mt-16 md:w-[16rem] md:h-[16rem]   md:mb-4 mr-4">
               <div className=" text-balance  md:flex md:flex-col md:gap-3 text-base">
@@ -55,13 +55,13 @@ const About = () => {
       <div className="hidden xl:block lg:block ">
         <div className=' lg:w-full xl:w-full xl:h-screen  lg:h-screen flex  '>
           {/* Top-About */}
-          <div className="flex flex-col p-8 w-full h-screen ">
+          <div className="flex flex-col py-8 px-4 w-full h-screen ">
             <p className='text-4xl font-bold text-[#4185ac] underline underline-offset-4'>ABOUT</p>
             <p className='text-base text-black mt-8'> Hi, I'm<strong className='text-[#4185ac]'>  Rishav Kumar </strong> — a passionate web developer, designer, video editor, and photographer. With a keen eye for aesthetics and a love for creating digital experiences I specialize in crafting responsive, user-friendly websites, designing visually compelling interfaces, and editing videos that tell powerful stories.
             </p>
             {/* Image and Header */}
             <div className="flex justify-evenly gap-4 mt-12">
-              <img src={profile} alt="img" className='w-[24rem] h-[24rem] border 1px bg-cover bg-center rounded-lg' />
+              <img src={avtar} alt="img" className='w-[25rem] h-[25rem]  border 1px bg-cover bg-center rounded-lg' />
               <div className="flex flex-col gap-4 p-4">
                 <h4 className='font-bold text-xl  underline underline-offset-8 text-[#4185ac]'>
                   UI/UX Designer & Web Developer</h4>
